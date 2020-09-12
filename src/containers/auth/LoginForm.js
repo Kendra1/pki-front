@@ -17,7 +17,6 @@ const FormikTextField = withFormikField(TextField);
 class LoginForm extends Component {
 
   submit = (values) => {
-
     this.props.logIn({ username: values.email, password: values.password });
   };
 

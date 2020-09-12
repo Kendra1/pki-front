@@ -38,7 +38,7 @@ function CertificatesTable(props) {
     },[props.data])
 
     return (
-        <TableContainer component={Paper}  
+        <TableContainer component={Paper} elevation={3}
         style={{margin: 'auto',
             width: '80%',
             padding: '10px'}} >

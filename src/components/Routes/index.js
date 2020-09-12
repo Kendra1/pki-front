@@ -6,7 +6,7 @@ import { compose } from 'redux'
 import PrivateRoute from '../../containers/PrivateRoute'
 import PublicRoute from '../../containers/PublicRoute'
 import Login from '../../containers/auth/Login'
-import Dashboard from '../../containers/Dashboard'
+import Dashboard from '../../components/Dashboard'
 
 import { LOGIN, DASHBOARD } from '../../routes'
 
