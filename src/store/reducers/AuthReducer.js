@@ -2,7 +2,8 @@ import { AUTH_USER, SET_ROLE } from '../actions/ActionTypes';
 import AuthService from '../../services/AuthService';
 
 const initialState = {
-  isAuth: AuthService.isAuthenticated(),
+  // isAuth: AuthService.isAuthenticated(),
+  isAuth: true,
   role: AuthService.getUserRole()
 }
 
@@ -13,7 +14,7 @@ const authReducer = (state = initialState, action) => {
       return { ...state, isAuth: action.payload }
     case SET_ROLE:
 
-      return { ...state, role: action.payload, profile:null }
+      return { ...state, role: action.payload }
     default:
       return state;
   }
