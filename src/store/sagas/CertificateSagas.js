@@ -12,6 +12,7 @@ export function* certificatesGet(action) {
 }
 
 export function* certificatePost(action) {
+    console.log("poost saga", action.payload)
     try {
         const resp = yield call(() => certService.postCertificate(action.payload));
         yield put(setAddedCertificate(resp));

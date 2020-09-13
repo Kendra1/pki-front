@@ -10,7 +10,7 @@ class CertService extends ApiService {
 
     getCertificates = async () => {
         const { data } = await this.apiClient.get(ENDPOINTS.GET_CERTIFICATES)
-
+        console.log("DATA", data);
         return data;
     }
 
@@ -20,7 +20,7 @@ class CertService extends ApiService {
     }
 
     revokeCertificate = async (id) => {
-        const { data } = await this.apiClient.delete(ENDPOINTS.REVOKE.replace(":id", id));
+        const { data } = await this.apiClient.post(ENDPOINTS.REVOKE.replace(":id", id));
 
         return data;
     }

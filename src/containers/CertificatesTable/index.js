@@ -70,18 +70,7 @@ function CertificatesTable(props) {
 
 const mapStateToProps = state => {
     return {
-    //   data: state.certificate.all,
-    data: [{
-        "commonName": "Viviry org",
-        "createdAt": "Thu, 10 Sep 2020 20:30:03 GMT",
-        "issuer": null,
-        "serialNumber": "319183177461500643549144964505708526340554597670"
-    }, {
-        "commonName": "Viviry org",
-        "createdAt": "Thu, 10 Sep 2020 20:30:03 GMT",
-        "issuer": null,
-        "serialNumber": "319183177461500643549144964505708526340554597670"
-    }]
+      data: state.certificate.all,
     };
 };
   

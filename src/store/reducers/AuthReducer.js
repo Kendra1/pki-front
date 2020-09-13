@@ -4,7 +4,7 @@ import AuthService from '../../services/AuthService';
 const initialState = {
   // isAuth: AuthService.isAuthenticated(),
   isAuth: true,
-  role: AuthService.getUserRole()
+  role:"admin"
 }
 
 const authReducer = (state = initialState, action) => {

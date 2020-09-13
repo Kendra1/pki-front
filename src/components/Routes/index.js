@@ -15,7 +15,7 @@ function Routes(props) {
     <BrowserRouter>
       <Switch>
         <PublicRoute restricted={true} component={Login} path={LOGIN} exact />
-        <PrivateRoute component={Dashboard} path={DASHBOARD} />
+        <PublicRoute component={Dashboard} path={DASHBOARD} />
       </Switch>
     </BrowserRouter>
   );
