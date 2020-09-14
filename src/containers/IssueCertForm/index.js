@@ -110,7 +110,7 @@ const transformValues = (values) => {
     newValues["keyUsage"] = keysUsage;
   }
   if (extKeysUsage.length) {
-    newValues["extKeyUsage"] = extKeysUsage;
+    newValues["extendedKeyUsage"] = extKeysUsage;
   }
 
   return newValues;
@@ -173,7 +173,7 @@ function IssueCertForm(props) {
               <Field
                 component={FormikTextField}
                 type="text"
-                name="ogranization"
+                name="organization"
                 variant="outlined"
                 required
                 fullWidth
